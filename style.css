@@ -1,0 +1,232 @@
+body {
+    background-color: #EEE;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	animation: menu 0.55s infinite alternate;
+}
+
+#top {
+    height: 50px;
+    border-bottom: 1px solid #121;
+    background-color: #476cbc;
+    color: white;
+}
+
+#title {
+    height: 50px;
+    float: left;
+}
+
+#title span {
+    font-size: 24px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+#nav {
+    height: 50px;
+    float: right;
+}
+
+#control a, #control div {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    height: 50px;
+    float: right;
+    display: block;
+}
+
+#control span {
+    padding-left: 12px;
+}
+
+#customize {
+	background-color: #bcbb97;
+}
+
+#customize:hover {
+	background-color: #24292E;
+	animation: customize 1s 1;
+}
+
+#github-link {
+    background-color: #8bb48c;
+}
+
+#github-link:hover {
+	background-color: #24292E;
+	animation: github 1s 1;
+}
+
+#github-link svg {
+    height: 50px;
+}
+
+#github-link * {
+    float: left;
+}
+
+#map {
+	background-color: #121;
+	margin-top: 30px;
+}
+
+#start {
+	/* background-color: #CECECE; */
+	border: 1px solid #121;
+	border-radius: 10px;
+	padding: 2px 10px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+#start:active {
+	background-color: #5ec24d;
+}
+
+#start:disabled {
+	opacity: 0.5;
+}
+
+#instructions {
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	top: 30%;
+	bottom: 30%;
+	background-color: #EEE;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+	overflow: auto;
+	animation: instructions 0.8s 1;
+}
+
+#game-over {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	opacity: 0.7;
+	background-color: #FFF;
+	animation: gameOver 3s 1;
+}
+
+#game-over div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+}
+
+#game-over span {
+	font-size: 6em;
+}
+
+#restart {
+	font-size: 1em;
+	padding: 2px 10px;
+	border-radius: 10px;
+	border: 1px solid #121;
+	cursor: pointer;
+}
+
+#customization-page {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	animation: custShow 0.3s 1;
+	background-color: #EEE;
+	text-align: left;
+	padding: 25px;
+}
+
+#customization-page blockquote {
+	width: 50%;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#customization-page h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#customization-page select, #customization-page input {
+	float: right;
+	padding: 5px;
+	border-radius: 15px;
+	font-size: 0.9em;
+	border: 1px solid #121;
+}
+
+#customization-page button, #instructions button {
+	background-color: #177eec;
+	padding: 5px 20px;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	font-size: 1em;
+	float: right;
+	margin-left: 10px;
+}
+
+#instructions button {
+	float: none;
+}
+
+#customization-page button:hover, #instructions button:hover {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.1)
+}
+
+#speed-set {
+	margin-top: 1em;
+	display: none;
+}
+
+#back {
+	margin-left: 40px !important;
+	float: left !important;
+}
+
+@keyframes instructions {
+	from {top: 80%; bottom: 0;}
+	to {top: 30%; bottom: 30%;}
+}
+
+@keyframes gameOver {
+	from {opacity: 0.2;}
+	to {opacity: 0.7;}
+}
+
+@keyframes github {
+	from {background-color: #8bb48c;}
+	to {background-color: #24292E;}
+}
+
+@keyframes customize {
+	from {background-color: #BCBB97;}
+	to {background-color: #24292E;}
+}
+
+@keyframes custShow {
+	from {opacity: 0.8;}
+	to {opacity: 1;}
+}
+
+@keyframes menu {
+	from {opacity: 1;}
+	to {opacity: 0.3;}
+}
