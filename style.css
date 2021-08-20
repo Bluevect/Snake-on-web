@@ -9,6 +9,10 @@ body {
 	animation: menu 0.55s infinite alternate;
 }
 
+.hidden {
+	display: none;
+}
+
 #top {
     height: 50px;
     border-bottom: 1px solid #121;
@@ -110,7 +114,6 @@ body {
 }
 
 #game-over {
-	display: none;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -140,7 +143,6 @@ body {
 }
 
 #customization-page {
-	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -191,9 +193,8 @@ body {
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.1)
 }
 
-#speed-set {
+#customization-page div {
 	margin-top: 1em;
-	display: none;
 }
 
 #back {

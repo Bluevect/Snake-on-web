@@ -48,7 +48,7 @@
 			<button type="button" id="instruction-ok">OK</button>
 		</div>
 		
-		<div id="game-over">
+		<div id="game-over" class="hidden">
 			<div>
 				<span>Game Over!</span>
 				<br />
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		
-		<div id="customization-page">
+		<div id="customization-page" class="hidden">
 			<blockquote>
 				<h3>
 					<span>Speed</span>
@@ -71,10 +71,35 @@
 					</select>
 				</h3>
 				
-				<div id="speed-set">
+				<div id="speed-set" class="hidden">
 					<span>Speed value (ms/move)</span>
 					<button type="button" id="speed-ok">OK</button>
 					<input type="text" id="speed-text" value="200" />
+				</div>
+				
+			</blockquote>
+			
+			<blockquote>
+				<h3>Color</h3>
+				<div>
+					<span>Background color</span>
+					<button type="button" id="bg-color-ok">OK</button>
+					<input type="text" id="bg-color-text" value="gray" />
+				</div>
+				<div>
+					<span>Snake color</span>
+					<button type="button" id="snake-color-ok">OK</button>
+					<input type="text" id="snake-color-text" value="#304c9a" />
+				</div>
+				<div>
+					<span>Food color</span>
+					<button type="button" id="food-color-ok">OK</button>
+					<input type="text" id="food-color-text" value="orange" />
+				</div>
+				<div>
+					<span>Killed color (the head of the dead snake)</span>
+					<button type="button" id="killed-color-ok">OK</button>
+					<input type="text" id="killed-color-text" value="red" />
 				</div>
 			</blockquote>
 			

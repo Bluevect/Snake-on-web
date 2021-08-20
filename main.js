@@ -70,7 +70,7 @@ class Snake {
 			// knock on itself
 			this.blocks.indexOf(head) != -1
 		) {
-			draw(lastHead, "red");
+			draw(lastHead, killedColor);
 			
 			this.kill();
 			return;
