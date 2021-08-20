@@ -1,3 +1,6 @@
+# Game
+You can play it ![here](bluevect.github.io/Snake-on-web).
+
 # How to play
 Press ***up***, ***down***, ***left***, ***right*** to control the snake, try to eat the food and live as long as possible.
 
