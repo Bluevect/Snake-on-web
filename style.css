@@ -13,6 +13,8 @@ body {
 	display: none;
 }
 
+/* top */
+
 #top {
     height: 50px;
     border-bottom: 1px solid #121;
@@ -29,11 +31,6 @@ body {
     font-size: 24px;
     line-height: 50px;
     margin-left: 10px;
-}
-
-#nav {
-    height: 50px;
-    float: right;
 }
 
 #control a, #control div {
@@ -79,6 +76,8 @@ body {
     float: left;
 }
 
+/* map */
+
 #map {
 	background-color: #121;
 	margin-top: 30px;
@@ -97,9 +96,7 @@ body {
 	background-color: #5ec24d;
 }
 
-#start:disabled {
-	opacity: 0.5;
-}
+/* other */
 
 #instructions {
 	position: absolute;
